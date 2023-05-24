@@ -1,4 +1,8 @@
-﻿client_id = os.getenv('AZURE_CLIENT_ID')
+﻿
+def get_user_groups_graph_api():
+    load_dotenv()
+
+    client_id = os.getenv('AZURE_CLIENT_ID')
     tenant_id = os.getenv('AZURE_TENANT_ID')
     client_secret = os.getenv('AZURE_CLIENT_SECRET')
     azure_token = os.getenv('AZURE_TOKEN')
